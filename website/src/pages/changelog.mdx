@@ -16,13 +16,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add origin verification for bindings by @APshenkin in [PR](https://github.com/wailsapp/wails/pull/4480)
 - Configure Vite timeout by @leaanthony in [PR](https://github.com/wailsapp/wails/pull/4374)
 - Added `ContentProtection` option to allow hiding the application window from screen sharing software [#4241](https://github.com/wailsapp/wails/pull/4241) by [@Taiterbase](https://github.com/Taiterbase)
 - Added `build:tags` to project specification for automatically adding compilation tags by @symball in [PR](https://github.com/wailsapp/wails/pull/4439)
+- Support for binding generics in [PR](https://github.dev/wailsapp/wails/pull/3626) by @ktsivkov
 
 ### Fixed
+- Added url validation for BrowserOpenURL by @APshenkin in [PR](https://github.com/wailsapp/wails/pull/4484)
 - Fixed C compilation error in onWayland on Linux due to declaration after label [#4446](https://github.com/wailsapp/wails/pull/4446) by [@jaesung9507](https://github.com/jaesung9507)
 - Use computed style when adding 'wails-drop-target-active' [PR](https://github.com/wailsapp/wails/pull/4420) by [@riannucci](https://github.com/riannucci)
+- Fixed panic when adding menuroles on Linux [#4558](https://github.com/wailsapp/wails/pull/4558) by [@jaesung9507](https://github.com/jaesung9507)
 
 ## v2.10.2 - 2025-07-06
 
@@ -39,6 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated documentation to display the correct copyright year in [#4243](https://github.com/wailsapp/wails/pull/4243) by [@nnashwin](https://github.com/nnashwin)
 
 ### Added
+- Added DLLSearchPaths option to control DLL search paths on Windows in [#4207](https://github.com/wailsapp/wails/pull/4207) by @ansxuman
 - Added "Branding" section to `wails doctor` to correctly identify Windows 11 [#3891](https://github.com/wailsapp/wails/pull/3891) by [@ronen25](https://github.com/ronen25)
 - Added `-skipembedcreate` flag to build and dev command to improve compile and recompile speed [#4143](https://github.com/wailsapp/wails/pull/4143) by @josStorer
 - Added `DisablePanicRecovery` option to allow handle panics manually [#4136](https://github.com/wailsapp/wails/pull/4136) by [@APshenkin](https://github.com/APshenkin)
